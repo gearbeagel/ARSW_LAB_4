@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>Python</ID>
+  <OriginalElement>#C:/Users/kondr/Coding/university/uni_6_sem/ARSW/LAB_4/models.py</OriginalElement>
+  <nodes>
+    <node x="166.5" y="771.0">models.Dish</node>
+    <node x="-197.0" y="757.0">models.Order</node>
+    <node x="3.0" y="979.5">models.SimpleOrder</node>
+    <node x="-197.0" y="1079.5">models.BulkOrder</node>
+    <node x="68.0" y="-31.0">singleton.OrderDatabase</node>
+    <node x="182.0" y="317.0">observer.OrderNotifier</node>
+    <node x="46.5" y="219.5">observer.Observer</node>
+    <node x="-210.5" y="639.5">factory.OrderFactory</node>
+    <node x="-206.5" y="-3.0">models.Menu</node>
+    <node x="91.0" y="539.5">observer.KitchenNotifier</node>
+    <node x="-181.5" y="345.0">models.Client</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="models.BulkOrder" target="models.Order" relationship="REALIZATION">
+      <point x="0.0" y="-30.5" />
+      <point x="0.0" y="73.0" />
+    </edge>
+    <edge source="observer.KitchenNotifier" target="observer.Observer" relationship="REALIZATION">
+      <point x="0.0" y="-30.5" />
+      <point x="209.0" y="510.0" />
+      <point x="149.0" y="510.0" />
+      <point x="0.0" y="30.5" />
+    </edge>
+    <edge source="models.SimpleOrder" target="models.Order" relationship="REALIZATION">
+      <point x="0.0" y="-30.5" />
+      <point x="169.0" y="950.0" />
+      <point x="-31.0" y="950.0" />
+      <point x="0.0" y="73.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="0.7307046979865772" showDependencies="false" x="150.5" y="565.0" />
+  <SelectedNodes>
+    <node>models.Client</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+  </Categories>
+</Diagram>
+
